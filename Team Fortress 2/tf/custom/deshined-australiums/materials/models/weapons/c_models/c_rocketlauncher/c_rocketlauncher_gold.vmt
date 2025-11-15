@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials/vgui/replay/thumbnails/models/weapons/shared/gold_shared.vmt"
+	
+	insert
+	{
+		"$basetexture"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher_gold"
+	}
+}

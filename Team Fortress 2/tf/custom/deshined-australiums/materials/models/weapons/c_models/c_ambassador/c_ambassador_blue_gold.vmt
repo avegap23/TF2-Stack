@@ -1,0 +1,11 @@
+"Patch"
+{
+	include "materials/vgui/replay/thumbnails/models/weapons/shared/gold_shared.vmt"
+	
+	insert
+	{
+		"$basetexture"				"models/weapons/c_models/c_ambassador/c_ambassador_blue_gold"
+		"$bumpmap"					"vgui/replay/thumbnails/models/weapons/c_models/c_ambassador/c_ambassador_gold_normal"
+		"$basemapalphaphongmask"	"0"
+	}
+}
