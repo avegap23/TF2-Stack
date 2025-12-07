@@ -78,30 +78,6 @@
 	  "tooltip"      "#MMenu_PlayList_CreateServer_Button"
     }
 	
-	"DemoUIButton"				//DEMO UI BUTTON
-	{
-	  "label"        "+"
-	  "command"      "engine demoui"
-	  "subimage"     "glyph_tv"
-	  "tooltip"      "Demo UI"
-    }
-	
-	"ConsoleButton"				//Console BUTTON
-	{
-	  "label"        ""
-	  "command"      "engine toggleconsole"
-	  "subimage"     "glyph_server"
-	  "tooltip"      "Console"
-    }
-	
-	"TrainingButtonTB"			//Training BUTTON
-	{
-		"label" ""
-		"command" "offlinepractice"
-		"subimage" "glyph_practice"
-		"tooltip"      "#MMenu_PlayList_Training_Button"
-	}
-	
 	"CallVoteButton"
 	{
 		"label"			""

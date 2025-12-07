@@ -17,9 +17,9 @@
 		"border"		"0"
 		//"bgcolor_override"	"0 0 0 255"
 
-		"log_font_small"			"HudFontSmallest"
-		"log_font_medium"			"HudFontSmallest"
-		"log_font_large"			"HudFontSmallest"
+		"log_font_small"			"HudFontSmall"
+		"log_font_medium"			"HudFontMediumSmallSecondary"
+		"log_font_large"			"HudFontMediumSecondary"
 
 		"chat_color_default"		"255 255 255 255"
 		"chat_color_player_name"	"255 255 0 255"

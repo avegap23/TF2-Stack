@@ -111,15 +111,15 @@
 				}
 			}
 		
-			"ContainerForGamemodes"	//TALL WILL NEED TO BE ADJUSTED DEPENDING ON NUMBER OF GAMEMODES
+			"GamemodesContainer"	//TALL WILL NEED TO BE ADJUSTED DEPENDING ON NUMBER OF GAMEMODES
 				{
 					"ControlName"			"EditablePanel"
-					"fieldName"				"ContainerForGamemodes"
+					"fieldName"				"GamemodesContainer"
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
 					"wide"					"250"
-					"tall"					"524"		//change this ifu change height
+					"tall"					"520"		//change this ifu change height
 					"visible"				"1"
 					"enabled"				"1"
 					"proportionaltoparent"	"1"
@@ -130,7 +130,7 @@
 					"ControlName"		"EditablePanel"
 					"xpos"				"-4"
 					"ypos"				"-2"
-					"wide"				"280"
+					"wide"				"f0"
 					"tall"				"26"
 
 					"proportionaltoparent"	"1"
@@ -151,42 +151,58 @@
 						"fgcolor"	"TanLight"	
 						"font"		"HudFontSmallBold"
 					}
-					
-					"AutoQueueButton"		//GREEN URL BUTTON
-					{
-						"ControlName"   "CExImageButton"
-						"fieldName"     "AutoQueueButton"
-						"xpos"          "-1"
-						"ypos"			"3"
-						"zpos"			"250"
-						"wide"			"252"
-						"tall"          "20"
-						"autoResize"    "0"
-						"pinCorner"     "3"
-						"visible"       "1"
-						"enabled"       "1"
-						"command"       "url https://comfig.app/quickplay/?autostart=1&gm=attack_defense,ctf,capture_point,koth,payload,&autoclose=1"
-						"tabPosition"   "0"
-						"proportionaltoparent" "1"
-						"labeltext"		">"
-						"textAlignment"	"east"
-						"font"	"HudFontSmallBold"
-						//"textinsetx"	"538"
-						"textinsety"	"2"
-						"dulltext"      "0"
-						"brighttext"    "0"
-						"default"       "1"
-						"eatmouseinput"	"0"
-						"actionsignallevel" "2"
-						"defaultFgColor_override"	"117 107 94 200"
-						"armedFgColor_override"		"TanLight"
-						"sound_depressed"   "UI/buttonclick.wav"
-						"sound_released"    "UI/buttonclickrelease.wav" 
-						"sound_armed"		"ui/item_info_mouseover.wav"
-						"paintbackground"   "0"
+				}
+				
+				"AutoQueueButton"		//GREEN URL BUTTON
+				{
+					"ControlName"   "CExImageButton"
+					"fieldName"     "AutoQueueButton"
+					"xpos"          "0"
+					"ypos"			"0"
+					"zpos"			"250"
+					"wide"			"f0"
+					"tall"          "20"
+					"autoResize"    "0"
+					"pinCorner"     "3"
+					"visible"       "1"
+					"enabled"       "1"
+					"command"       "url https://comfig.app/quickplay/?autostart=1&gm=attack_defense,ctf,capture_point,koth,payload,&autoclose=1"
+					"tabPosition"   "0"
+					"proportionaltoparent" "1"
+					"labeltext"		">"
+					"pin_to_sibling" "AutoQueuePinA"
+					"pin_corner_to_sibling" "PIN_TOPRIGHT"
+					"pin_to_sibling_corner" "PIN_TOPLEFT"
+					"textAlignment"	"east"
+					"font"	"HudFontSmallBold"
+					"textinsetx"	"0"
+					"textinsety"	"0"
+					"dulltext"      "0"
+					"brighttext"    "0"
+					"default"       "1"
+					"eatmouseinput"	"0"
+					"actionsignallevel" "2"
+					"defaultFgColor_override"	"117 107 94 200"
+					"armedFgColor_override"		"TanLight"
+					"sound_depressed"   "UI/buttonclick.wav"
+					"sound_released"    "UI/buttonclickrelease.wav" 
+					"sound_armed"		"ui/item_info_mouseover.wav"
+					"paintbackground"   "0"
 					}
 					
-				}
+					"AutoQueuePinA"
+					{
+						"fieldName"			"AutoQueuePinA"
+						"ControlName"		"EditablePanel"
+						"xpos"				"r14"
+						"ypos"				"2"
+						"wide"				"20"
+						"tall"				"20"
+						"visible"			"0"
+						"enabled"			"1"
+						"proportionaltoparent"	"1"
+						"border"		"MainMenuBGBorder"
+					}
 				
 				"ADContainer"	//ATTACK DEFENSE
 				{
@@ -196,7 +212,7 @@
 					//"ypos"					"0"
 					"ypos"					"22"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -225,28 +241,27 @@
 						"xpos"					"0"
 						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_ad"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 
-					"GamemodePictureBlackBGFix"		//BLACK BACKGROUND FOR GAMEMODE
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
 						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -271,6 +286,29 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
+					
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_AttackDefense"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
 		
 					"GamemodeDescriptionText"
 					{
@@ -292,18 +330,21 @@
 					"enabled"		"1"
 					}
 					
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
+						
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -388,7 +429,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -417,30 +458,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_ctf"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -465,7 +505,30 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
-		
+					
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_CTF"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+					
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -486,18 +549,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -583,7 +648,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -612,30 +677,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_cp"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -661,6 +725,29 @@
 						"enabled"		"1"
 					}
 		
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_CP"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+		
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -681,18 +768,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -700,6 +789,7 @@
 
 						"proportionaltoparent"	"1"
 					}
+					
 					"AutoQueueButton"		//GREEN URL BUTTON
 					{
 						"ControlName"   "CExImageButton"
@@ -776,7 +866,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -805,30 +895,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_koth"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -853,7 +942,30 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
-		
+					
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_KOTH"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+					
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -874,18 +986,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -970,7 +1084,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -999,30 +1113,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_payload"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -1047,6 +1160,29 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
+					
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_Escort"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
 		
 					"GamemodeDescriptionText"
 					{
@@ -1068,18 +1204,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -1192,6 +1330,58 @@
 					"pin_to_sibling"	"GrayBarCloser"	// PIN TO SIBLING TO STACK THE GAMEMODES, WAY EASIER THAN DOING MATH
 					"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
 				
+				
+					"AutoQueueButton"		//GREEN URL BUTTON
+					{
+						"ControlName"   "CExImageButton"
+						"fieldName"     "AutoQueueButton"
+						"xpos"          "0"
+						"ypos"			"0"
+						"zpos"			"250"
+						"wide"			"f0"
+						"tall"          "20"
+						"autoResize"    "0"
+						"pinCorner"     "3"
+						"visible"       "1"
+						"enabled"       "1"
+						"command"       "url https://comfig.app/quickplay/?autostart=1&gm=arena,alternative,payload_race&autoclose=1"
+						"tabPosition"   "0"
+						"proportionaltoparent" "1"
+						"labeltext"		">"
+						"pin_to_sibling" "AutoQueuePin"
+						"pin_corner_to_sibling" "PIN_TOPRIGHT"
+						"pin_to_sibling_corner" "PIN_TOPLEFT"
+						"textAlignment"	"east"
+						"font"	"HudFontSmallBold"
+						"textinsetx"	"0"
+						"textinsety"	"0"
+						"dulltext"      "0"
+						"brighttext"    "0"
+						"default"       "1"
+						"eatmouseinput"	"0"
+						"actionsignallevel" "2"
+						"defaultFgColor_override"	"117 107 94 200"
+						"armedFgColor_override"		"TanLight"
+						"sound_depressed"   "UI/buttonclick.wav"
+						"sound_released"    "UI/buttonclickrelease.wav" 
+						"sound_armed"		"ui/item_info_mouseover.wav"
+						"paintbackground"   "0"
+					}
+					
+					"AutoQueuePin"
+					{
+						"fieldName"			"AutoQueuePin"
+						"ControlName"		"EditablePanel"
+						"xpos"				"r9"
+						"ypos"				"1"
+						"wide"				"20"
+						"tall"				"20"
+						"visible"			"0"
+						"enabled"			"1"
+						"proportionaltoparent"	"1"
+						"border"		"MainMenuBGBorder"
+					}
+				
 					"ALTGameModesBGPanel"
 					{
 						"fieldName"			"ALTGameModesBGPanel"
@@ -1218,39 +1408,6 @@
 							"fgcolor"	"TanLight"	
 							"font"		"HudFontSmallBold"
 						}
-						
-					"AutoQueueButton"		//GREEN URL BUTTON
-					{
-						"ControlName"   "CExImageButton"
-						"fieldName"     "AutoQueueButton"
-						"xpos"          "-1"
-						"ypos"			"3"
-						"zpos"			"250"
-						"wide"			"252"
-						"tall"          "20"
-						"autoResize"    "0"
-						"pinCorner"     "3"
-						"visible"       "1"
-						"enabled"       "1"
-						"command"       "url https://comfig.app/quickplay/?autostart=1&gm=arena,alternative,payload_race&autoclose=1"
-						"tabPosition"   "0"
-						"proportionaltoparent" "1"
-						"labeltext"		">"
-						"textAlignment"	"east"
-						"font"	"HudFontSmallBold"
-						"textinsety"	"2"
-						"dulltext"      "0"
-						"brighttext"    "0"
-						"default"       "1"
-						"eatmouseinput"	"0"
-						"actionsignallevel" "2"
-						"defaultFgColor_override"	"117 107 94 200"
-						"armedFgColor_override"		"TanLight"
-						"sound_depressed"   "UI/buttonclick.wav"
-						"sound_released"    "UI/buttonclickrelease.wav" 
-						"sound_armed"		"ui/item_info_mouseover.wav"
-						"paintbackground"   "0"
-					}
 					
 					}
 			
@@ -1261,7 +1418,7 @@
 					"xpos"					"0"
 					"ypos"					"22"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -1288,30 +1445,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"3"			//first one is different bc of fucky spacing
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_plr"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"3"				//first one is diff bc of fucky spacing
-						"zpos"					"-11"		
-						"wide"					"250"
-						"tall"					"50"
+						"ypos"					"3"
+						"zpos"					"-11"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -1336,7 +1492,30 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
-		
+	
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_EscortRace"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+	
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -1357,18 +1536,20 @@
 						"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -1453,7 +1634,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -1482,30 +1663,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_arena"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -1530,6 +1710,29 @@
 						"visible"		"1"
 						"enabled"		"1"
 					}
+					
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_Arena"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
 		
 					"GamemodeDescriptionText"
 					{
@@ -1551,18 +1754,20 @@
 						"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -1647,7 +1852,7 @@
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -1676,30 +1881,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_sd"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -1725,6 +1929,29 @@
 						"enabled"		"1"
 					}
 		
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_Misc"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+					
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -1745,18 +1972,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"
@@ -1834,14 +2063,14 @@
 					}
 				}	//End of MiscContainer
 			
-							"RandomContainer"
+				"RandomContainer"
 				{
 					"ControlName"			"EditablePanel"
 					"fieldName"				"RandomContainer"
 					"xpos"					"0"
 					"ypos"					"0"
 					"zpos"					"-10"
-					"wide"					"250"
+					"wide"					"f0"
 					"tall"					"53"
 					"visible"				"1"
 					"enabled"				"1"
@@ -1870,30 +2099,29 @@
 						"ControlName"			"ImagePanel"
 						"fieldName"				"GamemodePicture"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-10"
-						"wide"					"250"
-						"tall"					"51"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
 						"image"					"../vgui/casual/gametype_featured_campaign3"
-						"scaleImage"			"0"
+						"scaleImage"			"1"
 						"proportionaltoparent"	"1"
 						"mouseinputenabled"		"0"
 					}
 					
-					"GamemodePictureBlackBGFix"
+					"GamemodePictureBlackBGFix"	//BLACK BACKGROUND FOR GAMEMODE
 					{
 						"ControlName"			"EditablePanel"
 						"fieldName"				"GamemodePictureBlackBGFix"
 						"xpos"					"0"
-						"ypos"					"4-1-1"
+						"ypos"					"3"
 						"zpos"					"-11"
-						"wide"					"250"
-						"tall"					"50"
+						"wide"					"f0"
+						"tall"					"p1.17"
 						"visible"				"1"
 						"enabled"				"1"
-						"scaleImage"			"0"
 						"proportionaltoparent"	"1"
 						"bgcolor_override"	"0 0 0 255"
 						"mouseinputenabled"		"0"
@@ -1919,6 +2147,29 @@
 						"enabled"		"1"
 					}
 		
+					"GamemodeTitleShadow"
+					{
+						"ControlName"	"CExLabel"
+						"fieldName"		"TitleShadow"
+						"xpos"			"r127+1"
+						"ypos"			"8"
+						"zpos"			"2"
+						"wide"			"120"
+						"tall"			"40"
+						"visible"		"1"
+						"enabled"		"1"
+						"labelText"		"#Gametype_Quickplay"
+						"font"			"HudFontSmallestBold"
+						"textAlignment"	"north-west"
+						"dulltext"		"0"
+						"brighttext"	"0"
+						"default"		"1"
+						"proportionaltoparent" "1"
+						"mouseinputenabled"	"0"
+
+						"fgcolor_override"		"Black"
+					}
+					
 					"GamemodeDescriptionText"
 					{
 						"ControlName"	"CExLabel"
@@ -1939,18 +2190,20 @@
 					"enabled"		"1"
 					}
 				
-					"FindAGameLabel"	//not so stupid anymore
+					"FindAGameLabel"	//stupid hack
 					{
 						"ControlName"	"CExLabel"
 						"fieldName"		"FindAGameLabel"
-						"xpos"			"-8"
+						"xpos"			"0"
 						"ypos"			"rs1+1"
 						"zpos"			"251"
 						"wide"			"f0"
 						"tall"			"10"
 						"labeltext"		"Find a Game >"
-						"textAlignment"	"east"
+						"textAlignment"	"west"
+						//"textAlignment"	"south"
 						"font"	"MMenuPlayListDesc"
+						"textinsetx"	"430"
 						"visible"		"1"
 						"enabled"		"1"
 						"eatmouseinput"	"0"

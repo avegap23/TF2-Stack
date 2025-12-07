@@ -2248,125 +2248,347 @@
             }               
         }
     }   
-				
-	"SettingsButton"				//LEFT END BUTTON TOOLBAR -------------------------------------------------------------------
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SettingsButton"
-		"xpos"			"c-234+273-12-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-234+273-12"
-        }
-		"ypos"			"437"
-		"zpos"			"-1"
-		"wide"			"29"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"west"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"OpenOptionsDialog"
-
-		"navUp"			"Notifications_Panel"
-		"navLeft"		"ReportBugButton"
-		"navRight"		"TF2SettingsButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-		}			
-	}
-
-	"TF2SettingsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"TF2SettingsButton"
-		"xpos"			"c-209+273-12-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-209+273-12"
-        }
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"26"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"+"
-		"textAlignment"	"north-west"
-		"textinsetx"	"18"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"opentf2options"
-		"use_proportional_insets"	"1"
-
-		"navUp"			"Notifications_Panel"
-		"navLeft"		"SettingsButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-			"scaleImage"	"1"
-		}				
-	}
-		
-	"ConsoleButton"	//hack to fix tooltips
-	{
-		"ControlName"   "EditablePanel"
-        "fieldname"     "ConsoleButton"
-        "xpos"          "c-186+273-12-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-186+273-12"
-        }
+						
+    "AdvOptionsButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "AdvOptionsButton"
+        "xpos"          "c170"
         "ypos"          "437"
         "zpos"          "1"
-        "wide"          "36"
+        "wide"          "140"
         "tall"          "25"
-        "visible"       "1"	
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     "Adv. options"
+        "font"          "HudFontSmallBold"
+        "textAlignment" "east"
+        "textinsetx"    "25"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "opentf2options"
+
+        "navUp"         "Notifications_Panel"
+        "navLeft"       "SettingsButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "16"
+            "ypos"          "6"
+            "zpos"          "1"
+            "wide"          "14"
+            "tall"          "14"
+            "visible"       "1"
+            "enabled"       "1"
+            "scaleImage"    "1"
+            "image"         "glyph_options"
+            "scaleImage"    "1"
+        }               
+    }       
+	
+    "OptionsButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "OptionsButton"
+        "xpos"          "c14"
+        "ypos"          "437"
+        "zpos"          "1"
+        "wide"          "138"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     "#GameUI_GameMenu_Options"
+        "font"          "HudFontSmallBold"
+        "textAlignment" "west"
+        "textinsetx"    "35"
+        "use_proportional_insets" "1"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "OpenOptionsDialog"
+
+        "navUp"         "Notifications_Panel"
+        "navLeft"       "ReportBugButton"
+        "navRight"      "TF2SettingsButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "16"
+            "ypos"          "6"
+            "zpos"          "1"
+            "wide"          "14"
+            "tall"          "14"
+            "visible"       "1"
+            "enabled"       "1"
+            "scaleImage"    "1"
+            "image"         "glyph_options"
+        }           
+    }	
+
+    "MusicPrevButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "MusicPrevButton"
+        "xpos"          "c-131"
+        "ypos"          "437"
+        "zpos"          "2"
+        "wide"          "30"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     ""
+        "font"          "HudFontSmallBold"
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "engine tf2song"
+
+        "navUp"         "VRModeButton"
+        "navLeft"       "QuitButton"
+        "navRight"      "AchievementsButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "PaintBackgroundType" "0"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"5"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"18"
+			"tall"			"18"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"../vgui/replay/thumbnails/glyph_muschange_prev"
+			"scaleImage"	"1"
+        }               
+    }   
+    
+    "MusicStopButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "MusicStopButton"
+        "xpos"          "c-106"
+        "ypos"          "437"
+        "zpos"          "3"
+        "wide"          "30"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     ""
+        "font"          "HudFontSmallBold"
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "engine tf2nomusic"
+
+        "navUp"         "VRModeButton"
+        "navLeft"       "NewUserForumsButton"
+        "navRight"      "CommentaryButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "border_default"    "MainMenuSubButtonBorder"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"19"
+			"tall"			"19"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"../vgui/replay/thumbnails/glyph_musstop"
+			"scaleImage"	"1"
+        }               
+    }       
+
+    "MusicNextButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "MusicNextButton"
+        "xpos"          "c-81"
+        "ypos"          "437"
+        "zpos"          "4"
+        "wide"          "30"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     ""
+        "font"          "HudFontSmallBold"
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "engine tf2songp"
+
+        "navUp"         "VRModeButton"
+        "navLeft"       "AchievementsButton"
+        "navRight"      "CoachPlayersButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "border_default"    "MainMenuSubButtonBorder"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"18"
+			"tall"			"18"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"../vgui/replay/thumbnails/glyph_muschange_next"
+			"scaleImage"	"1"
+        }               
+    }       
+
+    "ConsoleButtonTB"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "ConsoleButtonTB"
+        "xpos"          "c-56"
+        "ypos"          "437"
+        "zpos"          "5"
+        "wide"          "25"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     ""
+        "font"          "HudFontSmallBold"
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "engine toggleconsole"
+
+        "navUp"         "VRModeButton"
+        "navLeft"       "CommentaryButton"
+        "navRight"      "ReportBugButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "border_default"    "MainMenuSubButtonBorder"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"4"
+			"ypos"			"4"
+			"zpos"			"1"
+			"wide"			"18"
+			"tall"			"18"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"     "../vgui/replay/thumbnails/glyph_console"
+			"scaleImage"	"1"
+        }             
+    }       
+    
+    "OpenSafeModeExtrasButton"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "OpenSafeModeExtrasButton"
+        "xpos"          "c-36"
+        "ypos"          "437"
+        "zpos"          "1"
+        "wide"          "30"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labelText"     ""
+        "font"          "HudFontSmallBold"
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "1"
+        "Command"       "engine toggle cl_mainmenu_safemode 1 0"
+
+        "navUp"         "VRModeButton"
+        "navLeft"       "CoachPlayersButton"
+        "navRight"      "SettingsButton"
+
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        
+        "image_drawcolor"   "235 226 202 255"
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "10"
+            "ypos"          "5"
+            "zpos"          "1"
+            "wide"          "15"
+            "tall"          "15"
+            "visible"       "1"
+            "enabled"       "1"
+            "image"     "../vgui/replay/thumbnails/glyph_extras"
+            "scaleImage"    "1"
+        }               
+    }       
+		
+	"ConsoleButtonOLD"	//hack to fix tooltips
+	{
+		"ControlName"   "EditablePanel"
+        "fieldname"     "ConsoleButtonOLD"
+        "xpos"          "c-56"
+        "ypos"          "437"
+        "zpos"          "5"
+        "wide"          "25"
+        "tall"          "25"
+		"visible"		"0"
+		"enabled"		"0"
 		
 		"SubButton"
 		{
@@ -2403,86 +2625,27 @@
 			{
 				"ControlName"	"ImagePanel"
 				"fieldName"		"SubImage"
-				"xpos"			"8"
-				"ypos"			"2+1+1+1+1"
+				"xpos"			"6"
+				"ypos"			"3"
 				"zpos"			"1"
-				if_wider
-				{
-					"xpos"		"8"
-					"wide"			"p0.018"
-				}
-				"wide"			"15"
-				"tall"			"p0.031"
+				"wide"			"20"
+				"tall"			"20"
 				"visible"		"1"
 				"enabled"		"1"
-				"image"			"glyph_server"
 				"scaleImage"	"1"
 			}				
 		}
-	}
-	
-	"NewUserForumsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"NewUserForumsButton"
-		"xpos"			"c-158+272-11-27"	//4:3
-		if_wider
-        {
-			"xpos"		"c-158+272-11"
-        }
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"26"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"view_newuser_forums"
+	}	
 
-		"navUp"			"VRModeButton"
-		"navLeft"		"QuitButton"
-		"navRight"		"AchievementsButton"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"PaintBackgroundType" "0"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"4"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"18"
-			"tall"			"18"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_tutorial"
-			"scaleImage"	"1"
-		}				
-	}		
-	
-//NEW BUTTON UMMMM	trainingbuttonTB
-
-	"TrainingButtonTB"	//hack to fix tooltips
+	"OpenSafeModeExtrasButtonOLD"	//hack to fix tooltips
 	{
 		"ControlName"   "EditablePanel"
-        "fieldname"     "TrainingButtonTB"
-        "xpos"          "c-158+273+11-27"	//4:3
+        "fieldname"     "OpenSafeModeExtrasButtonOLD"
+		"xpos"			"c12+273+13-27"	//4:3
 		if_wider
         {
-            "xpos"		"c-158+273+11"
+           "xpos"		"c-160+24+23+23+23"
         }
         "ypos"          "437"
         "zpos"          "1"
@@ -2537,384 +2700,11 @@
 			}						
 		}
 	}
-	
-	"AchievementsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"AchievementsButton"
-		"xpos"			"c-133+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-133+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"4"
-		"wide"			"30"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"OpenAchievementsDialog"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"NewUserForumsButton"
-		"navRight"		"CommentaryButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"5"
-			"ypos"			"3+1+1"
-			"zpos"			"1"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_achievements"
-			"scaleImage"	"1"
-		}				
-	}		
-	
-	"CommentaryButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"CommentaryButton"
-		"xpos"			"c-108+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-108+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"5"
-		"wide"			"30"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"OpenLoadSingleplayerCommentaryDialog"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"AchievementsButton"
-		"navRight"		"CoachPlayersButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"2+1+1+1+1"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_forums"
-			"scaleImage"	"1"
-		}				
-	}		
-	
-	"CoachPlayersButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"CoachPlayersButton"
-		"xpos"			"c-83+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-83+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"6"
-		"wide"			"25"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine cl_coach_toggle"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"CommentaryButton"
-		"navRight"		"ReportBugButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"5"
-			"ypos"			"5"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_commentary"
-			"scaleImage"	"1"
-		}				
-	}		
-
-	"WorkshopButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"WorkshopButton"
-		"xpos"			"c-63+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-63+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"5"
-		"wide"			"30"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine OpenSteamWorkshopDialog"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"AchievementsButton"
-		"navRight"		"CoachPlayersButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"9"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_steamworkshop"
-			"scaleImage"	"1"
-		}				
-	}	
-
-	"ReplayButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"ReplayButton"
-		"xpos"			"c-34+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-34+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"6"
-		"wide"			"26"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine replay_reloadbrowser"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"AchievementsButton"
-		"navRight"		"CoachPlayersButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"5"
-			"ypos"			"5"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_tv"
-			"scaleImage"	"1"
-		}				
-	}
-	
-	
-	"DemoUIButton"	//hack to fix tooltips
-	{
-		"ControlName"   "EditablePanel"
-        "fieldname"     "DemoUIButton"
-        "xpos"          "c-10+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c-10+273+13"
-        }
-        "ypos"          "437"
-        "zpos"          "7"
-        "wide"          "26"
-        "tall"          "250"
-        "visible"       "1"
-		
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"26"
-			"tall"			"25"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"+"
-			"proportionaltoparent"	"1"
-			"textAlignment"	"north-west"
-			"textinsetx"	"17"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
-			"Command"		"engine demoui"
-			//"tooltip"      	"Demo UI"
-			"use_proportional_insets"	"1"
-
-			"navUp"			"Notifications_Panel"
-			"navLeft"		"SettingsButton"
-
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			"border_default"	"MainMenuSubButtonBorder"
-		
-			"image_drawcolor"	"235 226 202 255"
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"5"
-				"ypos"			"6"
-				"zpos"			"1"
-				"wide"			"15"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-				"image"			"glyph_tv"
-				"scaleImage"	"1"
-			}				
-		}
-	}
-
-	"ReportBugButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"ReportBugButton"
-		"xpos"			"c12+273+13-27"	//4:3
-		if_wider
-        {
-            "xpos"		"c12+273+13"
-        }
-		"ypos"			"437"
-		"zpos"			"6"
-		"wide"			"29"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine bug"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"CoachPlayersButton"
-		"navRight"		"SettingsButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"9"
-			"ypos"			"5"
-			"zpos"			"1"
-			"wide"			"15"
-			"tall"			"15"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"glyph_bug"
-			"scaleImage"	"1"
-		}				
-	}						//RIGHT END BUTTON TOOLBAR -------------------------------------------------------------------
-
     "QuitButton"
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "QuitButton"
-        "xpos"          "c-285"
+        "xpos"          "c-300"
         "ypos"          "437"
         "zpos"          "1"
         "wide"          "150"
@@ -2964,7 +2754,7 @@
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "DisconnectButton"
-        "xpos"          "c-285"
+        "xpos"          "c-300"
         "ypos"          "437"
         "zpos"          "1"
         "wide"          "150"
@@ -3905,146 +3695,6 @@
         }
     }
 	
-	  	"MusicPrevButton"	
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MusicPrevButton"
-		"xpos"			"c-114"
-		"ypos"			"437"
-		"zpos"			"1"
-		"wide"			"28"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-//		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine tf2song"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"CoachPlayersButton"
-		"navRight"		"SettingsButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"5"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"18"
-			"tall"			"18"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../vgui/replay/thumbnails/glyph_muschange_prev"
-			"scaleImage"	"1"
-		}				
-	}	
-
-	"MusicStopButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MusicStopButton"
-		"xpos"			"c-88"
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"27"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-//		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine tf2nomusic"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"AchievementsButton"
-		"navRight"		"CoachPlayersButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"4"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"19"
-			"tall"			"19"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../vgui/replay/thumbnails/glyph_musstop"
-			"scaleImage"	"1"
-		}				
-	}
-	
-		"MusicNextButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MusicNextButton"
-		"xpos"			"c-63"
-		"ypos"			"437"
-		"zpos"			"1"
-		"wide"			"28"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-//		"font"			"HudFontSmallBold"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"engine tf2songp"
-
-		"navUp"			"VRModeButton"
-		"navLeft"		"QuitButton"
-		"navRight"		"AchievementsButton"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"PaintBackgroundType" "0"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"4"
-			"zpos"			"1"
-			"wide"			"18"
-			"tall"			"18"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../vgui/replay/thumbnails/glyph_muschange_next"
-			"scaleImage"	"1"
-		}				
-	}
-	
 	"ChatPin"
 	{
 		"ControlName"    "Panel"
@@ -4089,7 +3739,7 @@
 		
 	}
 
-//START OF QUICKPLAY PANEL STUFF --------------------------------------------------------------------------
+//SAFEMODE EXTRAS PANEL --------------------------------------------------------------------------
 
 	"SafeMode"
 	{
@@ -4175,10 +3825,10 @@
 			"mouseinputenabled"		"0"
 		}
 
-		"QuickplayCancelButtonBGMcoms"		//GIANT HIDDEN BUTTON THAT CLOSES MENU LIKE THE CASUAL MENU
+		"SafeModeInvisibleCancelButton"		//GIANT HIDDEN BUTTON THAT CLOSES MENU LIKE THE CASUAL MENU
 		{
 			"ControlName"	"CExButton"
-			"fieldName"		"QuickplayCancelButtonBGMcoms"
+			"fieldName"		"SafeModeInvisibleCancelButton"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"60"
@@ -4205,12 +3855,12 @@
 			"depressedBgColor_override" "46 43 42 0"
 		}	
 
-		"Container"		//PARENT OF EVERYTHING BELOW I FORGOT TO ADD AN INDENT
+		"ExtrasContainer"		//PARENT OF EVERYTHING BELOW I FORGOT TO ADD AN INDENT
 		{
 			"ControlName"	"EditablePanel"
-			"fieldName"		"Container"
+			"fieldName"		"ExtrasContainer"
 			"xpos"			"r270"
-			"ypos"			"10"
+			"ypos"			"112"
 			"zpos"			"1002"
 			"wide"			"270"
 			"tall"			"f70"
@@ -4220,7 +3870,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 			"PaintBackgroundType"	"0"
-			
+		
 		"TitleLabel"
 		{
 			"ControlName"		"Label"
@@ -4231,7 +3881,7 @@
 			"wide"		"f0"
 			"tall"		"20"
 			"proportionaltoparent"	"1"
-			"labeltext"		"#TF_Quickplay_Title"
+			"labeltext"		"Extras"
 			"textAlignment"	"west"
 			"font"			"HudFontMediumBigBold"
 			"fgcolor_override"	"TanDark"
@@ -4282,7 +3932,487 @@
 			"alpha"		"255"
 			"image"		"gradient_pure_black"
 		}
-	
+		
+		"AchievementsButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"AchievementsButton"
+			"xpos"			"p0.02"
+			"ypos"			"52"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#MMenu_Tooltip_Achievements"
+			"proportionaltoparent"	"1"
+			"command"		"OpenAchievementsDialog"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_achievements"
+					"scaleImage"    "1"
+				}
+		}				
+
+		"CommentaryButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"CommentaryButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#MMenu_Tooltip_Commentary"
+			"proportionaltoparent"	"1"
+			"command"		"OpenLoadSingleplayerCommentaryDialog"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_forums"
+					"scaleImage"    "1"
+				}
+		}
+		
+		"TrainingModeButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"TrainingModeButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		#MMenu_PlayList_Training_Button
+			"proportionaltoparent"	"1"
+			"command"		"offlinepractice"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_practice"
+					"scaleImage"    "1"
+				}
+		}
+		
+		"CoachPlayersButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"CoachPlayersButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#MMenu_RequestCoach"
+			"proportionaltoparent"	"1"
+			"command"		"engine cl_coach_toggle"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_commentary"
+					"scaleImage"    "1"
+				}
+		}
+
+		"WorkshopButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"WorkshopButon"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#MMenu_SteamWorkshop"
+			"proportionaltoparent"	"1"
+			"command"		"engine OpenSteamWorkshopDialog"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_steamworkshop"
+					"scaleImage"    "1"
+				}
+		}
+
+		"ReplayButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"ReplayButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#GameUI_GameMenu_ReplayDemos"
+			"proportionaltoparent"	"1"
+			"command"		"engine replay_reloadbrowser"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_tv"
+					"scaleImage"    "1"
+				}
+		}
+
+		"DemoUIButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"DemoUIButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28+28+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"Demo UI"
+			"proportionaltoparent"	"1"
+			"command"		"engine demoui"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_tv"
+					"scaleImage"    "1"
+				}
+		}
+
+		"ReportBugButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"ReportBugButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28+28+28+28+28"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"#MMenu_Tooltip_ReportBug"
+			"proportionaltoparent"	"1"
+			"command"		"engine bug"
+			"actionsignallevel"	"3"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "6"
+					"ypos"          "6"
+					"zpos"          "1"
+					"wide"          "14"
+					"tall"          "14"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"glyph_bug"
+					"scaleImage"    "1"
+				}
+		}
+
+		"LeaveSafeModeButon"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"LeaveSafeModeButton"
+			"xpos"			"p0.02"
+			"ypos"			"52+28+28+28+28+28+28+28+31"
+			"zpos"			"11"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"    "25"
+			"tabPosition"	"0"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"labeltext"		"EXIT MENU"
+			"proportionaltoparent"	"1"
+			"command"		"engine cl_mainmenu_safemode 0"
+			"actionsignallevel"	"3"
+			
+            "depressedFgColor_override" "235 226 202 255"
+		
+            "image_drawcolor"	"235 226 202 255"
+			
+			   "SubImage"
+				{
+					"ControlName"   "ImagePanel"
+					"fieldName"     "SubImage"
+					"xpos"          "4"
+					"ypos"          "4"
+					"zpos"          "1"
+					"wide"          "18"
+					"tall"          "18"
+					"visible"       "1"
+					"enabled"       "1"
+					"image"			"../vgui/replay/thumbnails/glyph_back"
+					"scaleImage"    "1"
+				}
+		}
+
 		"BGPanel"		//BACKGROUND FILL, TAKEN FROM CASUAL MENU
 		{
 			"ControlName"	"EditablePanel"
@@ -4298,5 +4428,6 @@
 			"border"		"MainMenuBGBorder"
 		}
 	}
+	
 	} // SafeMode END
 }
