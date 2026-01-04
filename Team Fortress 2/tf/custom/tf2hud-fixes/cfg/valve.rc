@@ -1,0 +1,31 @@
+// load the base configuration
+//exec default.cfg
+r_decal_cullsize 1
+
+// Setup custom controller
+exec joystick.cfg
+
+// run a user script file if present
+exec autoexec.cfg
+
+//
+// stuff command line statements
+//
+stuffcmds
+
+// display the startup level
+startupmenu
+
+sv_unlockedchapters 99
+
+// HUD Settings
+exec hud_customizations.cfg
+hud_reloadscheme
+
+// Transparent Viewmodels
+mat_motion_blur_enabled 1
+mat_motion_blur_strength 0
+mat_disable_bloom 1
+mat_hdr_level 0
+mat_colcorrection_disableentities 1
+mat_colorcorrection 0
