@@ -1,6 +1,6 @@
 // Added minmode support for Payload Race (Contributed by Azkuzku & RoseyLemonz)
 
-"Resource/UI/ObjectiveStatusEscort.res"
+"resource/ui/objectivestatusescort.res"
 {
 	"LevelBar"
 	{
@@ -83,7 +83,7 @@
 			}
 			"if_multiple_trains_bottom"
 			{
-				"ypos"				"89"
+				"ypos"				"82"
 			}
 		}
 		"CapPlayerImage"

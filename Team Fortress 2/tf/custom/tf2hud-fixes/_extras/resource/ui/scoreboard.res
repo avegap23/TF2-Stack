@@ -1,19 +1,7 @@
 // Adjustments to the Mann vs. Machine scoreboard
 
-"Resource/UI/Scoreboard.res"
+"resource/ui/scoreboard.res"
 {
-	"scores"
-	{
-		"ping_width"	"19"
-	}
-	"RedTeamPlayerCount"
-	{
-		if_mvm
-		{
-			"xpos"			"415"
-			"ypos"			"265"
-		}
-	}
 	"BluePlayerList"
 	{
 		"linespacing"	"17"

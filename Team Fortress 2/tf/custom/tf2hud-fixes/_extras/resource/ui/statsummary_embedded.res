@@ -1,6 +1,6 @@
 // Visual improvements to the Stats page
 
-"Resource/UI/winpanel.res"
+"resource/ui/winpanel.res"
 {
 	"StatData"
 	{
@@ -23,6 +23,7 @@
 			"textAlignment"	"center"
 			"ypos"			"180"	[!$OSX]
 			"wide"			"406"
+			"zpos"			"5"
 		}
 		"RecordsBG"
 		{

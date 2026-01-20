@@ -1,7 +1,7 @@
 // Fix Show Promo button overlapping MOTD panel
 // Fix incorrect zpos for FooterLine
 
-"Resource/UI/MainMenuOverride.res"
+"resource/ui/mainmenuoverride.res"
 {
 	MainMenuOverride
 	{
@@ -10,6 +10,10 @@
 	"ShowPromoCodesButton"
 	{
 		"zpos"			"0"
+	}
+	"CharacterSetupButton"
+	{
+		"wide"			"120"
 	}
 	"FooterLine"
 	{
@@ -20,14 +24,15 @@
 		"ControlName"		"CExLabel"
 		"fieldName"			"VersionLabel"
 		"font"				"FontStorePrice"
-		"labelText"			"Community HUD Fixes R10"
-		"xpos"				"rs1-5"
+		"labelText"			"Community HUD Fixes R11"
+		"xpos"				"0"
 		"ypos"				"r13"
 		"zpos"				"1"
-		"wide"				"130"
+		"wide"				"f0"
 		"tall"				"10"
 		"visible"			"1"
 		"enabled"			"1"
 		"textAlignment"		"east"
+		"textinsetx"		"5"
 	}
 }
