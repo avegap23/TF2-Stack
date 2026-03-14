@@ -130,12 +130,6 @@
 		"subimage"      "glyph_coop"
 		"OnlyAtMenu"	"1"
 	}
-	"FakeQuickplayMcomsButton"
-	{
-	    "label"         "Quickplay" 
-		"command"		"0"
-		"subimage"      "glyph_server"
-	}
 	
 	"NewGameButton"
 	{
