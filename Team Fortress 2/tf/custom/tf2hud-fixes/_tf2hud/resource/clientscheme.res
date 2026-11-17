@@ -5851,5 +5851,8 @@ Scheme
 		"15"		"resource/linux_fonts/liberationsans-bold.ttf"
 		"16"		"resource/linux_fonts/liberationmono-regular.ttf"
 		"17"		"resource/linux_fonts/firasans-regular.ttf"
+
+		"18"		"resource/linux_fonts/notosansthai.ttf"
+		"19"		"resource/linux_fonts/notocoloremoji.ttf"
 	}
 }

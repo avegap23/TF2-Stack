@@ -11,6 +11,7 @@ Ready to paste into `Steam/steamapps/common`
 - Revalved Class Portraits: https://gamebanana.com/mods/616795
 - Revalved Mercs: https://gamebanana.com/mods/604479
 - CriticalFlaw's TF2 HUD fixes: https://github.com/CriticalFlaw/tf2hud-fixes
+    - *I have implemented a fix by [irql-notlessorequal](https://github.com/irql-notlessorequal/tf2-linux-fonts) which restores emoji support*
 - High-Definition Menu Characters: https://gamebanana.com/mods/577695
 - Vita-saw Fix: https://gamebanana.com/mods/204464
 - VGUI Facelift: https://gamebanana.com/mods/530974
